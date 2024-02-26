@@ -1,0 +1,7 @@
+{
+  "$id": "https://github.com/projectronin/contract-messaging-prodeng-patient-notification/blob/main/v1/reference-type.schema.json",
+  "title": "Reference Type Enum Schema",
+  "description": "Type of the reference ID of incoming notification request.",
+  "type": "string",
+  "enum": ["careTeamResponse", "task", "invite"]
+}

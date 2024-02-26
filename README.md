@@ -1,4 +1,4 @@
-# contract project name here
+# contract-messaging-prodeng-patient-notification
 
 This project holds json contract (e.g. events, messaging, json storage, redis cache, etc.).  See the [ronin-contract-json-plugin](https://github.com/projectronin/ronin-gradle/tree/main/gradle-plugins/ronin-contract-json-plugin) repository for more information.
 

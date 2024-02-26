@@ -1,0 +1,8 @@
+{
+  "referenceId": "838fb225-2af6-45fb-b272-8a076bc15f4c",
+  "referenceType": "careTeamResponse",
+  "success": false,
+  "status": "retry",
+  "message": "OneSignal service timed out, will try again.",
+  "sentAt": "2023-03-10T07:23:13.837Z"
+}

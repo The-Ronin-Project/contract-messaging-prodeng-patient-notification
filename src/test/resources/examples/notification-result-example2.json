@@ -1,0 +1,8 @@
+{
+  "referenceId": "a61b7196-4cf5-43c6-8796-5226fbaca2f9",
+  "referenceType": "invite",
+  "success": false,
+  "status": "error",
+  "message": "invalid email address",
+  "sentAt": "2023-03-10T07:23:13.837Z"
+}
