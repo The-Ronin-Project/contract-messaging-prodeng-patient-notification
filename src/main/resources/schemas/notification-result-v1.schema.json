@@ -1,0 +1,41 @@
+{
+  "$id": "https://github.com/projectronin/contract-messaging-prodeng-patient-notification/blob/main/v1/notification-result-v1.schema.json",
+  "title": "Notification Result Event Schema",
+  "description": "Message sent to the notification results topic by Notification Service with the status of the notification event.",
+  "type": "object",
+  "properties": {
+    "referenceId" : {
+      "description": "Reference ID from the initiating service, most likely a UUID but not required to be.",
+      "type": "string"
+    },
+    "referenceType" : {
+      "$ref": "reference-type.schema.json"
+    },
+    "success": {
+      "description": "Simple boolean status for notification, true if notification sent successfully and status is `success`",
+      "type": "boolean"
+    },
+    "status": {
+      "description": "More specific status of the notification event. Success, Retry (if it failed but will retry later), or Error if it could not send the notification and will not retry.",
+      "type": "string",
+      "enum": ["success", "retry", "error"]
+    },
+    "message": {
+      "description": "Optional detailed message if not a successful notification event.",
+      "type": "string"
+    },
+    "sentAt": {
+      "description": "The ISO8601 timestamp when the notification was sent or if unsuccessful when the attempt was made.",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "referenceId",
+    "referenceType",
+    "success",
+    "status",
+    "sentAt"
+  ]
+}

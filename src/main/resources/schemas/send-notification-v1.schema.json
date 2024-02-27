@@ -1,0 +1,41 @@
+{
+  "$id": "https://github.com/projectronin/contract-messaging-prodeng-patient-notification/blob/main/v1/send-notification-v1.schema.json",
+  "title": "Send Notification Event Schema",
+  "description": "Message sent to the send notification topic, Notification Service will consume these messages.",
+  "type": "object",
+  "properties": {
+    "referenceId" : {
+      "description": "Reference ID from the initiating service, most likely a UUID but not required to be.",
+      "type": "string"
+    },
+    "referenceType" : {
+      "$ref": "reference-type.schema.json"
+    },
+    "userId": {
+      "description": "The user being notified. For patients this is udp_id. For providers in the future TBD.",
+      "type": "string"
+    },
+    "address": {
+      "description": "An email, phone number, or device id, depending on the notificationType.",
+      "type": "string"
+    },
+    "notificationType": {
+      "description": "Type of notification to send to the above address.",
+      "type": "string",
+      "enum": ["email","sms","push"]
+    },
+    "notificationBody": {
+      "description": "Body of the message to send.",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "referenceId",
+    "referenceType",
+    "userId",
+    "address",
+    "notificationType",
+    "notificationBody"
+  ]
+}

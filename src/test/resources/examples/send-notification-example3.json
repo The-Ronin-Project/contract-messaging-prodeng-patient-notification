@@ -1,0 +1,8 @@
+{
+  "referenceId": "838fb225-2af6-45fb-b272-8a076bc15f4c",
+  "referenceType": "careTeamResponse",
+  "userId": "dabd9a3a-15fe-4c38-8192-068abbad8e7c",
+  "address": "android-device-id-1234",
+  "notificationType": "push",
+  "notificationBody": "Your provider has responded to your symptoms report."
+}

@@ -1,0 +1,8 @@
+{
+  "referenceId": "a61b7196-4cf5-43c6-8796-5226fbaca2f9",
+  "referenceType": "invite",
+  "userId": "dabd9a3a-15fe-4c38-8192-068abbad8e7c",
+  "address": "some.email@gmail.com",
+  "notificationType": "email",
+  "notificationBody": "You have been invited to onboard with the RONIN app, follow the link below <some link>."
+}
