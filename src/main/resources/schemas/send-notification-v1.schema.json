@@ -16,7 +16,7 @@
       "type": "string"
     },
     "address": {
-      "description": "email, phone number, or device id, depending on the notificationType",
+      "description": "An email, phone number, or device id, depending on the notificationType.",
       "type": "string"
     },
     "notificationType": {
